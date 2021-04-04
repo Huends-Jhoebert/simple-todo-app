@@ -1,0 +1,89 @@
+/* css variable */
+
+:root {
+	--bg-color: #ADE0F0;
+	--btn-color: #2980b9;
+}
+
+/* global css */
+
+* {
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* body */
+
+body {
+	background-color: var(--bg-color);
+}
+
+/* overall container */
+
+.overall-container {
+	text-align: center;
+	width: 50%;
+	/* border: 1px solid black; */
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* overall-container */
+
+.overall-container h1 {
+	color: #fff;
+	font-size: 3rem;
+	letter-spacing: 5px;
+	margin-bottom: 4rem;
+}
+
+/* user input input-container */
+
+.input-container {
+	margin: 0 auto;
+	width: 60%;
+	display: flex;
+}
+
+.input-container input[type="text"] {
+	display: block;
+	width: 100%;
+	border: none;
+	border: 2px solid darkgray;
+	padding: 0.2em;
+}
+
+.input-container input[type="text"]:focus {
+	outline-color: var(--btn-color);
+}
+
+/* Button 1 */
+
+.input-container button {
+	margin-left: 10px;
+	background-color: #6FA7DD;
+	border-radius: 15px;
+	padding: 0.5em 1.6em;
+	border: none;
+	box-shadow: 0 5px #707070;
+	cursor: pointer;
+}
+
+.input-container button:hover {
+	background-color: var(--btn-color);
+}
+
+.input-container button:active {
+	background-color: var(--btn-color);
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.input-container i {
+	font-size: 1.3em;
+	color: #fff;
+}
