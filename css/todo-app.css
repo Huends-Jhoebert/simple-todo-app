@@ -107,11 +107,32 @@
 	justify-content: space-between;
 }
 
-.remove {
-	margin-left: 5rem;
+/* Grow Shadow */
+
+.li {
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: box-shadow, transform;
+	transition-property: box-shadow, transform;
+	cursor: pointer;
 }
 
-.remove i {
+.li:hover, .li:focus, .li:active {
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+/* remove icon */
+
+#remove {
 	color: #DC3545;
 	margin-right: 1rem;
 }
