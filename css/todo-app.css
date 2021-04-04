@@ -14,15 +14,12 @@
 	box-sizing: border-box;
 }
 
-/* body */
-
-body {
-	background-color: var(--bg-color);
-}
-
 /* overall container */
 
 .overall-container {
+	background-color: var(--bg-color);
+	border-radius: 10px;
+	padding: 1rem;
 	text-align: center;
 	width: 50%;
 	/* border: 1px solid black; */
@@ -30,6 +27,7 @@ body {
 	top: 20%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	border: 1px solid black;
 }
 
 /* overall-container */
