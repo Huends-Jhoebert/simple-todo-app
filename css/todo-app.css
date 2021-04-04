@@ -23,10 +23,8 @@
 	text-align: center;
 	width: 50%;
 	/* border: 1px solid black; */
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	margin: 0 auto;
+	margin-top: 1rem;
 	border: 1px solid black;
 }
 
@@ -43,7 +41,7 @@
 
 .input-container {
 	margin: 0 auto;
-	width: 60%;
+	width: 80%;
 	display: flex;
 }
 
@@ -52,7 +50,7 @@
 	width: 100%;
 	border: none;
 	border: 2px solid darkgray;
-	padding: 0.2em;
+	padding: 0.3em;
 }
 
 .input-container input[type="text"]:focus {
@@ -62,10 +60,11 @@
 /* Button 1 */
 
 .input-container button {
+	display: inline-block;
 	margin-left: 10px;
-	background-color: #6FA7DD;
+	background-color: #007BFF;
 	border-radius: 15px;
-	padding: 0.5em 1.6em;
+	padding: 0.2em 1.6em;
 	border: none;
 	box-shadow: 0 5px #707070;
 	cursor: pointer;
@@ -84,4 +83,35 @@
 .input-container i {
 	font-size: 1.3em;
 	color: #fff;
+}
+
+/* lists */
+
+.list-items {
+	padding: 0;
+	width: 85%;
+	margin-top: 1.5rem;
+}
+
+.li {
+	margin-left: 5rem;
+	text-align: left;
+	list-style: none;
+	padding: 0;
+	border: 1px solid #707070;
+	padding: 0.2rem;
+	background-color: #17A2B8;
+	color: #fff;
+	margin-bottom: 17px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.remove {
+	margin-left: 5rem;
+}
+
+.remove i {
+	color: #DC3545;
+	margin-right: 1rem;
 }

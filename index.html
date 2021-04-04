@@ -9,6 +9,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
 			rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 		<link rel="stylesheet" href="css/todo-app.css">
 		<title>TODO APP</title>
 	</head>
@@ -18,12 +19,15 @@
 		<form class="overall-container">
 			<h1>TODO APP</h1>
 			<div class="input-container">
-				<input type="text" name="Userinput" id="userinput" placeholder="Enter a todo task">
-				<button type="submit"><i class="fas fa-pencil-alt"></i></button>
+				<input type="text" name="Userinput" id="user-input" placeholder="Enter a todo task">
+				<button type="submit" id="submit-btn"><i class="fas fa-pencil-alt"></i></button>
 			</div>
+			<ul class="list-items">
+				<!-- <li class="li">
+					<p class="add">Create a time machine</p><a href="#" class="remove"><i class="fas fa-trash"></i></a>
+				</li> -->
+			</ul>
 		</form>
-
-
 
 		<script src="js/todo.js"></script>
 	</body>
