@@ -133,9 +133,16 @@
 
 /* remove icon */
 
-#remove {
-	color: #DC3545;
+.remove-btn {
 	margin-right: 1rem;
+	padding: 0 5px;
+	background: #17A2B8;
+	border: 1px solid #17A2B8;
+	cursor: pointer;
+}
+
+.remove-btn i {
+	color: #DC3545;
 }
 
 /* media queries */

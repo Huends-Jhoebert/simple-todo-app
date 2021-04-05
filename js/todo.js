@@ -1,5 +1,7 @@
 // get the li parent
 var listItems = document.querySelector('.list-items');
+//number of added lis
+var number = 0;
 
 // clas task
 class Task {
@@ -11,6 +13,8 @@ class Task {
 
 	// adding method
 	add() {
+		// add li number
+		number += 1;
 		// crete li
 		let newLi = document.createElement('li');
 		let textNode = document.createTextNode(this.task);
@@ -18,13 +22,13 @@ class Task {
 		newLi.className = 'li';
 
 		// create a link
-		let newA = document.createElement('a');
-		newA.setAttribute('href', '#');
+		let newA = document.createElement('button');
+		newA.className = 'remove-btn';
+		newA.setAttribute('onclick', `removedItem(${number});`)
 		newLi.appendChild(newA);
 
 		//create a delete icon
 		let newIcon = document.createElement('i');
-		newIcon.id = 'remove';
 		newIcon.className = 'fas fa-trash';
 		newA.appendChild(newIcon);
 
@@ -32,6 +36,7 @@ class Task {
 		listItems.appendChild(newLi);
 	}
 }
+
 
 // submit scipt
 var userInput = document.querySelector('#user-input');
@@ -41,5 +46,19 @@ function addUserToClassObject() {
 	event.preventDefault();
 	let user1 = new Task(userInput.value);
 	user1.add();
+	// console.log(listItems.children.length);
 
 }
+
+
+
+// var removedBtn = document.querySelectorAll('.remove-btn');
+// removedBtn.addEventListener('click', removedItem);
+
+function removedItem(number) {
+
+	console.log(number);
+}
+
+
+
