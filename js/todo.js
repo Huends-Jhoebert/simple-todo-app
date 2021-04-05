@@ -1,6 +1,7 @@
 // get the li parent
 var listItems = document.querySelector('.list-items');
-//number of added lis
+//the task number
+var taskNumber = document.querySelector('.task-number');
 
 // clas task
 class Task {
@@ -29,12 +30,18 @@ class Task {
 		newIcon.className = 'fas fa-trash';
 		newA.appendChild(newIcon);
 
+		// display the number of tasks
+		taskNumber.textContent = `You have ${listItems.children.length + 1} Tasks `;
+
 		// append the li child to the ul parent
 		listItems.appendChild(newLi);
 	}
 
+	// static method to removed item
 	static removeFromUl(liNumber) {
 		confirm(`Remove ${listItems.children[liNumber].textContent}`);
+		// display the number of tasks
+		taskNumber.textContent = `You have ${listItems.children.length - 1} Tasks `;
 		listItems.removeChild(listItems.children[liNumber]);
 	}
 }

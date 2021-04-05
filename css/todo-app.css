@@ -35,6 +35,11 @@
 	color: #fff;
 	font-size: 3rem;
 	letter-spacing: 5px;
+	margin-bottom: 0;
+}
+
+.overall-container h2 {
+	margin-bottom: 0;
 	margin-bottom: 4rem;
 }
 
