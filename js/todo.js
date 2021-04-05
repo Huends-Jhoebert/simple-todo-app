@@ -1,7 +1,6 @@
 // get the li parent
 var listItems = document.querySelector('.list-items');
 //number of added lis
-var number = 0;
 
 // clas task
 class Task {
@@ -13,8 +12,6 @@ class Task {
 
 	// adding method
 	add() {
-		// add li number
-		number += 1;
 		// crete li
 		let newLi = document.createElement('li');
 		let textNode = document.createTextNode(this.task);
@@ -24,7 +21,7 @@ class Task {
 		// create a link
 		let newA = document.createElement('button');
 		newA.className = 'remove-btn';
-		newA.setAttribute('onclick', `removedItem(${number});`)
+		newA.setAttribute('onclick', 'removedItem();');
 		newLi.appendChild(newA);
 
 		//create a delete icon
@@ -34,6 +31,11 @@ class Task {
 
 		// append the li child to the ul parent
 		listItems.appendChild(newLi);
+	}
+
+	static removeFromUl(liNumber) {
+		confirm(`Remove ${listItems.children[liNumber].textContent}`);
+		listItems.removeChild(listItems.children[liNumber]);
 	}
 }
 
@@ -46,18 +48,21 @@ function addUserToClassObject() {
 	event.preventDefault();
 	let user1 = new Task(userInput.value);
 	user1.add();
-	// console.log(listItems.children.length);
+
 
 }
 
+// removed script
+function removedItem() {
+	for (var i = 0, len = listItems.children.length; i < len; i++) {
 
+		(function (index) {
+			listItems.children[i].onclick = function () {
+				Task.removeFromUl(index);
+			}
+		})(i);
 
-// var removedBtn = document.querySelectorAll('.remove-btn');
-// removedBtn.addEventListener('click', removedItem);
-
-function removedItem(number) {
-
-	console.log(number);
+	}
 }
 
 
