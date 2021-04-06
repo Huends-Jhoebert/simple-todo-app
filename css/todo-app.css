@@ -23,10 +23,9 @@
 	text-align: center;
 	width: 50%;
 	max-width: 478px;
-	/* border: 1px solid black; */
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
 	margin: 0 auto;
 	margin-top: 1rem;
-	border: 1px solid black;
 }
 
 /* overall-container */
@@ -41,6 +40,11 @@
 .overall-container h2 {
 	margin-bottom: 0;
 	margin-bottom: 4rem;
+	color: #fff;
+}
+
+.task-numbers {
+	color: #F14F87;
 }
 
 /* user input input-container */
@@ -105,7 +109,7 @@
 	list-style: none;
 	padding: 0;
 	border: 1px solid #707070;
-	padding: 0.2rem;
+	padding: 0.5rem;
 	background-color: #17A2B8;
 	color: #fff;
 	margin-bottom: 17px;
@@ -148,6 +152,7 @@
 
 .remove-btn i {
 	color: #DC3545;
+	font-size: 1rem;
 }
 
 /* media queries */
@@ -177,8 +182,11 @@
 	.overall-container h1 {
 		font-size: 2.5rem;
 	}
+	.list-items {
+		width: 95%;
+	}
 	.li {
-		margin-left: 2.5rem;
+		margin-left: 1rem;
 		font-size: 0.8rem;
 	}
 }

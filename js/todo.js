@@ -32,10 +32,16 @@ class Task {
 
 		// display the number of tasks
 		if (listItems.children.length + 1 > 1) {
-			taskNumber.textContent = `You have ${listItems.children.length + 1} Tasks `;
+			let taskNumbers = listItems.children.length + 1; // get the length of ul lis
+			let numberToStr = taskNumbers.toString(); // convert the length to string
+			let strColor = numberToStr.fontcolor('#F14F87'); // change the color of the string
+			taskNumber.innerHTML = `You have ${strColor} tasks left`; //insert to innerhtml of the task number class
 		}
 		else {
-			taskNumber.textContent = `You have ${listItems.children.length + 1} Task `;
+			let taskNumbers = listItems.children.length + 1; // get the length of ul lis
+			let numberToStr = taskNumbers.toString(); // convert the length to string
+			let strColor = numberToStr.fontcolor('#F14F87'); // change the color of the string
+			taskNumber.innerHTML = `You have ${strColor} task `; //insert to innerhtml of the task number class
 		}
 
 		// append the li child to the ul parent
@@ -48,13 +54,19 @@ class Task {
 		// display the number of tasks
 		// if confirm is equals to true excecute this code
 		if (con == true) {
-			if (listItems.children.length > 1) {
+			if (listItems.children.length > 2) {
 				listItems.removeChild(listItems.children[liNumber]);
-				taskNumber.textContent = `You have ${(listItems.children.length + 1) - 1} Tasks `;
+				let taskNumbers = (listItems.children.length + 1) - 1; // get the length of ul lis
+				let numberToStr = taskNumbers.toString(); // convert the length to string
+				let strColor = numberToStr.fontcolor('#F14F87'); // change the color of the string
+				taskNumber.innerHTML = `You have ${strColor} tasks left`;
 			}
 			else {
 				listItems.removeChild(listItems.children[liNumber]);
-				taskNumber.textContent = `You have ${(listItems.children.length + 1) - 1} Task `;
+				let taskNumbers = (listItems.children.length + 1) - 1; // get the length of ul lis
+				let numberToStr = taskNumbers.toString(); // convert the length to string
+				let strColor = numberToStr.fontcolor('#F14F87'); // change the color of the string
+				taskNumber.innerHTML = `You have ${strColor} task`;
 			}
 		}
 		// if confirm is equal to false execute this code
