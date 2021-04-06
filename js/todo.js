@@ -31,7 +31,12 @@ class Task {
 		newA.appendChild(newIcon);
 
 		// display the number of tasks
-		taskNumber.textContent = `You have ${listItems.children.length + 1} Tasks `;
+		if (listItems.children.length + 1 > 1) {
+			taskNumber.textContent = `You have ${listItems.children.length + 1} Tasks `;
+		}
+		else {
+			taskNumber.textContent = `You have ${listItems.children.length + 1} Task `;
+		}
 
 		// append the li child to the ul parent
 		listItems.appendChild(newLi);
@@ -39,10 +44,23 @@ class Task {
 
 	// static method to removed item
 	static removeFromUl(liNumber) {
-		confirm(`Remove ${listItems.children[liNumber].textContent}`);
+		var con = confirm(`Remove ${listItems.children[liNumber].textContent}`);
 		// display the number of tasks
-		taskNumber.textContent = `You have ${listItems.children.length - 1} Tasks `;
-		listItems.removeChild(listItems.children[liNumber]);
+		// if confirm is equals to true excecute this code
+		if (con == true) {
+			if (listItems.children.length > 1) {
+				listItems.removeChild(listItems.children[liNumber]);
+				taskNumber.textContent = `You have ${(listItems.children.length + 1) - 1} Tasks `;
+			}
+			else {
+				listItems.removeChild(listItems.children[liNumber]);
+				taskNumber.textContent = `You have ${(listItems.children.length + 1) - 1} Task `;
+			}
+		}
+		// if confirm is equal to false execute this code
+		else {
+			false;
+		}
 	}
 }
 
