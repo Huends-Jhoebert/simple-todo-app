@@ -22,6 +22,29 @@ body {
       box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
       margin: 0 auto;
       margin-top: 1rem;
+      // ! mediaqueries for extra small devices
+      @media only screen and (max-width: 600px) {
+         width: 90%;
+         h1 {
+            font-size: 2.5rem;
+         }
+         .list-items {
+            width: 95%;
+         }
+         .li {
+            margin-left: 1rem;
+            font-size: 0.8rem;
+         }
+      }
+      // ! mediaqueries for small devices
+      @media only screen and (min-width: 600px) {
+         width: 95%;
+      }
+      // ! mediaqueries for tablet devices
+      @media only screen and (min-width: 768px) and (max-width: 992px) {
+         width: 90%;
+      }
+
       h1 {
          color: #fff;
          font-size: 3rem;
@@ -135,11 +158,11 @@ body {
 /* media queries */
 /* tablets */
 
-@media (min-width: 768px) and (max-width: 992px) {
-   .overall-container {
-      width: 90%;
-   }
-}
+// @media (min-width: 768px) and (max-width: 992px) {
+//    .overall-container {
+//       width: 90%;
+//    }
+// }
 
 // @media only screen and (min-width: 768px) and (max-width: 992px) {
 //    .overall-container {
@@ -149,11 +172,11 @@ body {
 
 /* small devices */
 
-@media (min-width: 600px) {
-   .overall-container {
-      width: 95%;
-   }
-}
+// @media (min-width: 600px) {
+//    .overall-container {
+//       width: 95%;
+//    }
+// }
 
 // @media only screen and (min-width: 600px) {
 //    .overall-container {
@@ -163,22 +186,22 @@ body {
 
 /* extra small devices */
 
-@media (max-width: 600px) {
-   .overall-container {
-      width: 90%;
+// @media (max-width: 600px) {
+//    .overall-container {
+//       width: 90%;
 
-      h1 {
-         font-size: 2.5rem;
-      }
-      .list-items {
-         width: 95%;
-         .li {
-            margin-left: 1rem;
-            font-size: 0.8rem;
-         }
-      }
-   }
-}
+//       h1 {
+//          font-size: 2.5rem;
+//       }
+//       .list-items {
+//          width: 95%;
+//          .li {
+//             margin-left: 1rem;
+//             font-size: 0.8rem;
+//          }
+//       }
+//    }
+// }
 
 // @media only screen and (max-width: 600px) {
 //    .overall-container {

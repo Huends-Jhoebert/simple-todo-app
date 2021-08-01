@@ -23,6 +23,31 @@ body .overall-container {
   /* user input input-container */
   /* lists */
 }
+@media only screen and (max-width: 600px) {
+  body .overall-container {
+    width: 90%;
+  }
+  body .overall-container h1 {
+    font-size: 2.5rem;
+  }
+  body .overall-container .list-items {
+    width: 95%;
+  }
+  body .overall-container .li {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  body .overall-container {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  body .overall-container {
+    width: 90%;
+  }
+}
 body .overall-container h1 {
   color: #fff;
   font-size: 3rem;
@@ -121,30 +146,5 @@ body .overall-container .list-items .li .remove-btn i {
 
 /* media queries */
 /* tablets */
-@media (min-width: 768px) and (max-width: 992px) {
-  .overall-container {
-    width: 90%;
-  }
-}
 /* small devices */
-@media (min-width: 600px) {
-  .overall-container {
-    width: 95%;
-  }
-}
-/* extra small devices */
-@media (max-width: 600px) {
-  .overall-container {
-    width: 90%;
-  }
-  .overall-container h1 {
-    font-size: 2.5rem;
-  }
-  .overall-container .list-items {
-    width: 95%;
-  }
-  .overall-container .list-items .li {
-    margin-left: 1rem;
-    font-size: 0.8rem;
-  }
-}/*# sourceMappingURL=main.css.map */
+/* extra small devices *//*# sourceMappingURL=main.css.map */
