@@ -1,0 +1,180 @@
+/* css variable */
+:root {
+  /* ! primary color */
+  --bg-color: #ade0f0;
+  /* ! secondary color */
+  --btn-color: #2980b9;
+}
+
+/* global css */
+* {
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* overall container */
+.overall-container {
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  width: 50%;
+  max-width: 478px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+/* overall-container */
+.overall-container h1 {
+  color: #fff;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  margin-bottom: 0;
+}
+
+.overall-container h2 {
+  margin-bottom: 0;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+
+.task-numbers {
+  color: #f14f87;
+}
+
+/* user input input-container */
+.input-container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+}
+
+.input-container input[type=text] {
+  display: block;
+  width: 100%;
+  border: none;
+  border: 2px solid darkgray;
+  padding: 0.3em;
+}
+
+.input-container input[type=text]:focus {
+  outline-color: var(--btn-color);
+}
+
+/* Button 1 */
+.input-container button {
+  display: inline-block;
+  margin-left: 10px;
+  background-color: #007bff;
+  border-radius: 15px;
+  padding: 0.2em 1.6em;
+  border: none;
+  box-shadow: 0 5px #707070;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: var(--btn-color);
+}
+
+.input-container button:active {
+  background-color: var(--btn-color);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.input-container i {
+  font-size: 1.3em;
+  color: #fff;
+}
+
+/* lists */
+.list-items {
+  padding: 0;
+  width: 85%;
+  margin-top: 1.5rem;
+}
+
+.li {
+  margin-left: 5rem;
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  border: 1px solid #707070;
+  padding: 0.5rem;
+  background-color: #17a2b8;
+  color: #fff;
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Grow Shadow */
+.li {
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: box-shadow, transform;
+  cursor: pointer;
+}
+
+.li:hover,
+.li:focus,
+.li:active {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* remove icon */
+.remove-btn {
+  margin-right: 1rem;
+  padding: 0 5px;
+  background: #17a2b8;
+  border: 1px solid #17a2b8;
+  cursor: pointer;
+}
+
+.remove-btn i {
+  color: #dc3545;
+  font-size: 1rem;
+}
+
+/* media queries */
+/* tablets */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .overall-container {
+    width: 90%;
+  }
+}
+/* small devices */
+@media only screen and (min-width: 600px) {
+  .overall-container {
+    width: 95%;
+  }
+}
+/* extra small devices */
+@media only screen and (max-width: 600px) {
+  .overall-container {
+    width: 90%;
+  }
+
+  .overall-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .list-items {
+    width: 95%;
+  }
+
+  .li {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=main.css.map */
