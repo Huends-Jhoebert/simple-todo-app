@@ -18,16 +18,34 @@
 	<body>
 
 		<div class="overall-container">
-			<h1>TODO APP</h1>
-			<h2 class="task-number">You have <span class="task-numbers">0</span> Task</h2>
-			<div class="input-container">
-				<input type="text" name="Userinput" id="user-input" placeholder="Enter a todo task">
-				<button type="submit" id="submit-btn"><i class="fas fa-pencil-alt"></i></button>
+			<div class="todo-head">
+				<span><i class="fas fa-bars"></i></span>
+				<h3>TODO APP</h3>
+				<!-- <h2 class="task-number" style="display: none;">You have <span class="task-numbers">0</span> Task</h2> -->
+				<!-- <div class="input-container" style="display: none;">
+					<input type="text" name="Userinput" id="user-input" placeholder="Enter a todo task">
+					<button type="submit" id="submit-btn"><i class="fas fa-pencil-alt"></i></button>
+				</div> -->
 			</div>
-			<ul class="list-items">
-
-			</ul>
+			<div class="todo-body">
+				<ul class="list-items">
+					<div class="li">
+						<div><input type="checkbox">asdasd</div><button class="remove-btn" onclick="removedItem();"><i
+								class="fas fa-trash"></i></button>
+					</div>
+					<li class="li">
+						<div><input type="checkbox">asdasd</div><button class="remove-btn" onclick="removedItem();"><i
+								class="fas fa-trash"></i></button>
+					</li>
+					<li class="li">asdasd<button class="remove-btn" onclick="removedItem();"><i
+								class="fas fa-trash"></i></button></li>
+					<li class="li">asdasd<button class="remove-btn" onclick="removedItem();"><i
+								class="fas fa-trash"></i></button></li>
+				</ul>
+			</div>
+			<button class="new-task-btn"><i class="fas fa-plus"></i>New task</button>
 		</div>
+
 
 		<script src="js/todo.js"></script>
 	</body>
