@@ -22,8 +22,8 @@ body .overall-container {
 }
 body .overall-container .new-task-btn {
   border: none;
-  padding: 0.6rem 1.8rem;
-  border-radius: 20px;
+  padding: 0.6rem 1.3rem;
+  border-radius: 50px;
   position: absolute;
   right: 36%;
   bottom: -7%;
@@ -71,6 +71,7 @@ body .overall-container .todo-head span {
   left: 3%;
   top: 20%;
   color: #fff;
+  cursor: pointer;
 }
 body .overall-container .todo-body {
   background-color: #ffffff;
