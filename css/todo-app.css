@@ -1,7 +1,9 @@
 /* css variable */
 
 :root {
+   /* ! primary color */
    --bg-color: #ade0f0;
+   /* ! secondary color */
    --btn-color: #2980b9;
 }
 
