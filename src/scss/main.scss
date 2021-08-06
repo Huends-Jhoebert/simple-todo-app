@@ -47,7 +47,7 @@ body {
             cursor: pointer;
          }
          .sidenav {
-            height: 630.8%;
+            height: 630.5%;
             width: 0;
             position: absolute;
             z-index: 1;
@@ -197,15 +197,29 @@ body {
       // ! mediaqueries for extra small devices
       @media only screen and (max-width: 600px) {
          width: 90%;
+
+         .todo-head {
+            width: 100%;
+            .sidenav {
+               height: 600%;
+            }
+         }
+         .todo-body {
+            width: 100%;
+            .list-items {
+               width: 95%;
+            }
+            .li {
+               margin-left: 1rem;
+               font-size: 0.8rem;
+            }
+         }
+
+         .new-task-btn {
+            padding: 0.5rem 0.8rem;
+         }
          h1 {
             font-size: 2.5rem;
-         }
-         .list-items {
-            width: 95%;
-         }
-         .li {
-            margin-left: 1rem;
-            font-size: 0.8rem;
          }
       }
       // ! mediaqueries for small devices

@@ -49,7 +49,7 @@ body .overall-container .todo-head span {
   cursor: pointer;
 }
 body .overall-container .todo-head .sidenav {
-  height: 630.8%;
+  height: 630.5%;
   width: 0;
   position: absolute;
   z-index: 1;
@@ -183,15 +183,27 @@ body .overall-container .list-items .li input:checked {
   body .overall-container {
     width: 90%;
   }
-  body .overall-container h1 {
-    font-size: 2.5rem;
+  body .overall-container .todo-head {
+    width: 100%;
   }
-  body .overall-container .list-items {
+  body .overall-container .todo-head .sidenav {
+    height: 600%;
+  }
+  body .overall-container .todo-body {
+    width: 100%;
+  }
+  body .overall-container .todo-body .list-items {
     width: 95%;
   }
-  body .overall-container .li {
+  body .overall-container .todo-body .li {
     margin-left: 1rem;
     font-size: 0.8rem;
+  }
+  body .overall-container .new-task-btn {
+    padding: 0.5rem 0.8rem;
+  }
+  body .overall-container h1 {
+    font-size: 2.5rem;
   }
 }
 @media only screen and (min-width: 600px) {
