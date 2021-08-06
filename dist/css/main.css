@@ -34,31 +34,6 @@ body .overall-container .new-task-btn {
 body .overall-container .new-task-btn i {
   margin-right: 0.5rem;
 }
-@media only screen and (max-width: 600px) {
-  body .overall-container {
-    width: 90%;
-  }
-  body .overall-container h1 {
-    font-size: 2.5rem;
-  }
-  body .overall-container .list-items {
-    width: 95%;
-  }
-  body .overall-container .li {
-    margin-left: 1rem;
-    font-size: 0.8rem;
-  }
-}
-@media only screen and (min-width: 600px) {
-  body .overall-container {
-    width: 95%;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-  body .overall-container {
-    width: 90%;
-  }
-}
 body .overall-container .todo-head {
   position: relative;
   background-color: #af7eeb;
@@ -72,6 +47,38 @@ body .overall-container .todo-head span {
   top: 20%;
   color: #fff;
   cursor: pointer;
+}
+body .overall-container .todo-head .sidenav {
+  height: 630.8%;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+body .overall-container .todo-head .sidenav i {
+  color: #fff;
+}
+body .overall-container .todo-head .sidenav a {
+  padding: 8px 8px 8px 5px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+body .overall-container .todo-head .sidenav a:hover {
+  color: #f1f1f1;
+}
+body .overall-container .todo-head .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 36px;
+  margin-left: 50px;
+  padding-top: 0;
 }
 body .overall-container .todo-body {
   background-color: #ffffff;
@@ -171,6 +178,31 @@ body .overall-container .list-items .li input {
 }
 body .overall-container .list-items .li input:checked {
   background-color: #545558;
+}
+@media only screen and (max-width: 600px) {
+  body .overall-container {
+    width: 90%;
+  }
+  body .overall-container h1 {
+    font-size: 2.5rem;
+  }
+  body .overall-container .list-items {
+    width: 95%;
+  }
+  body .overall-container .li {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  body .overall-container {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  body .overall-container {
+    width: 90%;
+  }
 }
 
 /* media queries */

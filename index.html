@@ -19,7 +19,14 @@
 
 		<div class="overall-container">
 			<div class="todo-head">
-				<span><i class="fas fa-bars"></i></span>
+				<span onclick="openNav()"><i class="fas fa-bars"></i></span>
+				<!--  Side nav -->
+				<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="https://github.com/Huends-Jhoebert/simple-todo-app" target="_blank">Source code</a>
+					<i class="fab fa-github"></i>
+				</div>
+				<!-- Side nav -->
 				<h3>TODO APP</h3>
 				<!-- <h2 class="task-number" style="display: none;">You have <span class="task-numbers">0</span> Task</h2> -->
 				<!-- <div class="input-container" style="display: none;">
@@ -48,6 +55,7 @@
 
 
 		<script src="js/todo.js"></script>
+		<script src="./dist/js/sidenav.js"></script>
 	</body>
 
 </html>

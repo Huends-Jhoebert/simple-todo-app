@@ -33,30 +33,6 @@ body {
             margin-right: 0.5rem;
          }
       }
-
-      // ! mediaqueries for extra small devices
-      @media only screen and (max-width: 600px) {
-         width: 90%;
-         h1 {
-            font-size: 2.5rem;
-         }
-         .list-items {
-            width: 95%;
-         }
-         .li {
-            margin-left: 1rem;
-            font-size: 0.8rem;
-         }
-      }
-      // ! mediaqueries for small devices
-      @media only screen and (min-width: 600px) {
-         width: 95%;
-      }
-      // ! mediaqueries for tablet devices
-      @media only screen and (min-width: 768px) and (max-width: 992px) {
-         width: 90%;
-      }
-
       .todo-head {
          position: relative;
          background-color: $primary-color;
@@ -69,6 +45,42 @@ body {
             top: 20%;
             color: #fff;
             cursor: pointer;
+         }
+         .sidenav {
+            height: 630.8%;
+            width: 0;
+            position: absolute;
+            z-index: 1;
+            // top: 0;
+            // left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            i {
+               color: #fff;
+            }
+
+            a {
+               padding: 8px 8px 8px 5px;
+               text-decoration: none;
+               font-size: 0.8rem;
+               color: #818181;
+               display: block;
+               transition: 0.3s;
+
+               &:hover {
+                  color: #f1f1f1;
+               }
+            }
+            .closebtn {
+               position: absolute;
+               top: 0;
+               right: 5px;
+               font-size: 36px;
+               margin-left: 50px;
+               padding-top: 0;
+            }
          }
       }
 
@@ -180,6 +192,29 @@ body {
                }
             }
          }
+      }
+
+      // ! mediaqueries for extra small devices
+      @media only screen and (max-width: 600px) {
+         width: 90%;
+         h1 {
+            font-size: 2.5rem;
+         }
+         .list-items {
+            width: 95%;
+         }
+         .li {
+            margin-left: 1rem;
+            font-size: 0.8rem;
+         }
+      }
+      // ! mediaqueries for small devices
+      @media only screen and (min-width: 600px) {
+         width: 95%;
+      }
+      // ! mediaqueries for tablet devices
+      @media only screen and (min-width: 768px) and (max-width: 992px) {
+         width: 90%;
       }
    }
 }
