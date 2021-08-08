@@ -5,7 +5,6 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
 			rel="stylesheet">
@@ -29,10 +28,11 @@
 				<!-- Side nav -->
 				<h3>TODO APP</h3>
 				<!-- <h2 class="task-number" style="display: none;">You have <span class="task-numbers">0</span> Task</h2> -->
-				<!-- <div class="input-container" style="display: none;">
+				<div class="input-container">
 					<input type="text" name="Userinput" id="user-input" placeholder="Enter a todo task">
-					<button type="submit" id="submit-btn"><i class="fas fa-pencil-alt"></i></button>
-				</div> -->
+					<button type="submit" id="submit-btn" onclick="addTask();"><i
+							class="fas fa-pencil-alt"></i></button>
+				</div>
 			</div>
 			<div class="todo-body">
 				<ul class="list-items">
@@ -48,14 +48,23 @@
 								class="fas fa-trash"></i></button></li>
 					<li class="li">asdasd<button class="remove-btn" onclick="removedItem();"><i
 								class="fas fa-trash"></i></button></li>
+					<li class="li">asdasd<button class="remove-btn" onclick="removedItem();"><i
+								class="fas fa-trash"></i></button></li>
+					<li class="li">asdasd<button class="remove-btn" onclick="removedItem();"><i
+								class="fas fa-trash"></i></button></li>
+					<li class="li">asdasd<button class="remove-btn" onclick="removedItem();"><i
+								class="fas fa-trash"></i></button></li>
+
 				</ul>
 			</div>
 			<button class="new-task-btn"><i class="fas fa-plus"></i>New task</button>
 		</div>
 
 
-		<script src="js/todo.js"></script>
+		<!-- <script src="./dist/js/todo.js"></script> -->
 		<script src="./dist/js/sidenav.js"></script>
+		<script src="./dist/js/input.js"></script>
+
 	</body>
 
 </html>
