@@ -46,31 +46,38 @@ body {
          }
       }
       .todo-head {
+         padding: 0.6rem;
+         text-align: left;
          position: relative;
          background-color: $primary-color;
          width: 70%;
          margin: 0 auto;
          margin-bottom: 1rem;
          span {
-            position: absolute;
-            left: 3%;
-            top: 20%;
-            color: #fff;
-            cursor: pointer;
-            animation: fadeInAnimation ease 3s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-            @keyframes fadeInAnimation {
-               0% {
-                  opacity: 0;
-               }
-               100% {
-                  opacity: 1;
+            display: inline-block;
+            i {
+               font-size: 0.9rem;
+               color: #fff;
+               cursor: pointer;
+               animation: fadeInAnimation ease 3s;
+               animation-iteration-count: 1;
+               animation-fill-mode: forwards;
+               @keyframes fadeInAnimation {
+                  0% {
+                     opacity: 0;
+                  }
+                  100% {
+                     opacity: 1;
+                  }
                }
             }
          }
          .sidenav {
+            text-align: center;
+            height: 100%;
             width: 0;
+            top: 0;
+            left: 0;
             position: absolute;
             z-index: 1;
             // top: 0;
@@ -117,6 +124,9 @@ body {
       }
 
       h3 {
+         top: 1%;
+         left: 30%;
+         position: absolute;
          color: #fff;
          letter-spacing: 5px;
          margin-bottom: 0;
