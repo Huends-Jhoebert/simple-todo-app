@@ -129,6 +129,7 @@ body .overall-container .todo-body {
   width: 70%;
   margin: 0 auto;
   padding: 0.2rem 1rem 1rem;
+  padding-right: 0;
 }
 body .overall-container h3 {
   top: 1%;
@@ -229,7 +230,6 @@ body .overall-container .list-items .li {
 body .overall-container .list-items .li .remove-btn {
   background-color: #fff;
   border: none;
-  margin-right: 1rem;
   padding: 0 5px;
   cursor: pointer;
 }
