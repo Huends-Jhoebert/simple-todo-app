@@ -232,6 +232,7 @@ body .overall-container .list-items .li .remove-btn {
   border: none;
   padding: 0 5px;
   cursor: pointer;
+  display: none;
 }
 body .overall-container .list-items .li .remove-btn i {
   color: #cfd3e0;
