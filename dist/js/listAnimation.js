@@ -1,4 +1,4 @@
-function showHide(idName) {
+export function showHide(idName) {
    // ! if checkbox is check show the delete button
    if (document.querySelector(`#${idName}`).checked) {
       var getBtn = (document.querySelector(

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* global css */
 * {
   font-family: "Oswald", sans-serif;
@@ -7,7 +8,7 @@
 }
 
 body {
-  background-image: linear-gradient(to right, #8e9eab, #eef2f3);
+  background-image: linear-gradient(to left, #8e9eab, #eef2f3);
   /* overall container of the todo app */
 }
 body .overall-container {
@@ -242,16 +243,27 @@ body .overall-container .list-items .li input {
   margin-right: 1rem;
   width: 1.2em;
   height: 1.2em;
-  background-color: white;
-  border-radius: 50%;
   vertical-align: middle;
   border: 1px solid #cfd3e0;
   -webkit-appearance: none;
-  outline: none;
   cursor: pointer;
+  position: relative;
+}
+body .overall-container .list-items .li input:hover {
+  background-color: #39c0ed;
 }
 body .overall-container .list-items .li input:checked {
-  background-color: #545558;
+  background-color: #39c0ed;
+}
+body .overall-container .list-items .li input:checked::after {
+  content: "✓";
+  color: #fbfbfb;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 @media only screen and (max-width: 600px) {
   body .overall-container {

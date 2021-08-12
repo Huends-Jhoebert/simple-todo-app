@@ -14,7 +14,7 @@ addTaskBtn.addEventListener("click", () => {
    todoHead.style.padding = "0";
 });
 
-function addTask() {
+export function addTask() {
    // hambugerMenu.style.color = "#fff";
    todoAppLogo.style.display = "block";
    taskInput.style.display = "none";
