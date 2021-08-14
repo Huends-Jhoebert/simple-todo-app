@@ -52,7 +52,8 @@ export function addTask() {
 
       let newA = document.createElement("button");
       newA.className = "remove-btn";
-      newA.setAttribute("onclick", "removedItem();");
+      newA.id = `remove-btn-${counter}`;
+      newA.setAttribute("onclick", "removedItem(this.id);");
       newLi.appendChild(newA);
 
       //create a delete icon
@@ -68,4 +69,9 @@ export function addTask() {
       todoHead.style.padding = "0.6rem";
       sidenav.style.display = "block";
    }
+}
+
+// ! execute when removed btn is clicked
+export function removedItem(idName) {
+   listItems.removeChild(document.querySelector(`#${idName}`).parentNode);
 }

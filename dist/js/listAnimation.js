@@ -10,9 +10,4 @@ export function showHide(idName) {
          `#${idName}`
       ).parentNode.parentNode.childNodes[1].style.display = "none");
    }
-
-   var getBtn = document.querySelector(`#${idName}`).parentNode.parentNode
-      .childNodes;
-
-   console.log(getBtn);
 }
