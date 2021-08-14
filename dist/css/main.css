@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: linear-gradient(to left, #8e9eab, #eef2f3);
+  background: #e3e9ff;
   /* overall container of the todo app */
 }
 body .overall-container {
@@ -124,7 +124,7 @@ body .overall-container .todo-head .sidenav .closebtn {
   padding-top: 0;
 }
 body .overall-container .todo-body {
-  overflow-y: auto;
+  overflow-y: scroll;
   height: 220px;
   background-color: #ffffff;
   width: 70%;
