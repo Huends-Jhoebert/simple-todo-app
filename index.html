@@ -11,11 +11,11 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 		<!-- ! scss compiled css -->
 		<link rel="stylesheet" href="dist/css/main.css">
+		<link rel="manifest" href="./manifest.json">
 		<title>TODO WEB APP</title>
 	</head>
 
 	<body>
-
 		<div class="overall-container">
 			<div class="todo-head">
 				<div class="sidenav-container">
@@ -71,6 +71,13 @@
 
 
 		<script type="module" src="dist/js/main.js"></script>
+
+		<script>
+			if ("serviceWorker" in navigator) {
+				// register service worker
+				navigator.serviceWorker.register("service-worker.js");
+			}
+		</script>
 
 	</body>
 
